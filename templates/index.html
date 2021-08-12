@@ -17,9 +17,9 @@
   <h1 class="heading">My Top Movies</h1>
   <p class="description">These are my all time favourite movies.</p>
   
-  <div class="container add">
+  <!-- <div class="container add">
     <a href="{{ url_for('select') }}" class="button">Add Movie</a>
-  </div>
+  </div> -->
   
     <div class="row">
   {% for movie in movies %}
@@ -40,8 +40,8 @@
                 {{ movie.description }}
             </p>
 
-            <a href="{{ url_for('edit', id=movie.id) }}" class="button">Update</a>
-            <a href="{{ url_for('delete', id=movie.id) }}" class="button delete-button">Delete</a>
+            <!-- <a href="{{ url_for('edit', id=movie.id) }}" class="button">Update</a>
+            <a href="{{ url_for('delete', id=movie.id) }}" class="button delete-button">Delete</a> -->
 
           </div>
         </div>
